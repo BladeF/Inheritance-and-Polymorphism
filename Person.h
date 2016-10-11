@@ -14,3 +14,4 @@ class Person {
         int         getAge()               { return age; }
         void        setAge(int a)          { age = a; }
 };
+#endif
