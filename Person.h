@@ -9,6 +9,9 @@ class Person {
         int         age;
 
     public:
+        Person() { name = "John Smith"; age = 25; }
+        Person(std::string n, int a) { name = n; age = a; } 
+
         std::string getName()              { return name; }
         void        setName(std::string n) { name = n; }
         int         getAge()               { return age; }
