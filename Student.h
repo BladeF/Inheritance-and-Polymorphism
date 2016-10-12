@@ -1,14 +1,16 @@
 #ifndef _STUDENT
 #define _STUDENT
 
-class Student {
+#include "Person.h"
+class Student : Person {
     private:
         int     ID;
         double  GPA;
 
     public:
-        Student() { ID = 0000; GPA = 4.0; }
-        Student(int i, double g) { ID = i; GPA = g; }
+        Student();
+        Student(int i, double g);
+        Student(std::string n, int a, int i, double g);
 
         int    getID()          { return ID; }
         void   setID(int i)     { ID = i; }
