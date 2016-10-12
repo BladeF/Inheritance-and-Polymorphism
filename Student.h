@@ -2,7 +2,7 @@
 #define _STUDENT
 
 #include "Person.h"
-class Student : Person {
+class Student : public Person {
     private:
         int     ID;
         double  GPA;
