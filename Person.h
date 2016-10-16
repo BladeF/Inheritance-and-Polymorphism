@@ -16,5 +16,7 @@ class Person {
         void        setName(std::string n) { name = n; }
         int         getAge()               { return age; }
         void        setAge(int a)          { age = a; }
+
+        void        displayInfo();
 };
 #endif
