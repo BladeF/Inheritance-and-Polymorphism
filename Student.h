@@ -16,5 +16,7 @@ class Student : public Person {
         void   setID(int i)     { ID = i; }
         double getGPA()         { return GPA; }
         void   setGPA(double g) { GPA = g; }
+
+        void   displayInfo();
 };
 #endif
