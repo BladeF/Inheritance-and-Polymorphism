@@ -12,11 +12,11 @@ class Student : public Person {
         Student(int i, double g);
         Student(std::string n, int a, int i, double g);
 
-        int    getID()          { return ID; }
-        void   setID(int i)     { ID = i; }
-        double getGPA()         { return GPA; }
-        void   setGPA(double g) { GPA = g; }
+        int          getID()          { return ID; }
+        void         setID(int i)     { ID = i; }
+        double       getGPA()         { return GPA; }
+        void         setGPA(double g) { GPA = g; }
 
-        void   displayInfo();
+        virtual void displayInfo();
 };
 #endif

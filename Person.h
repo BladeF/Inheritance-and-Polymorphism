@@ -13,10 +13,10 @@ class Person {
         Person(std::string n, int a) { name = n; age = a; } 
 
         std::string getName()              { return name; }
-        void        setName(std::string n) { name = n; }
-        int         getAge()               { return age; }
-        void        setAge(int a)          { age = a; }
+        void         setName(std::string n) { name = n; }
+        int          getAge()               { return age; }
+        void         setAge(int a)          { age = a; }
 
-        void        displayInfo();
+        virtual void displayInfo();
 };
 #endif
