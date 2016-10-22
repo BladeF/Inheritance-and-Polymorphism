@@ -18,9 +18,9 @@ Student::Student(std::string n, int a, int i, double g) : Person(n, a) {
 
 void Student::displayInfo() {
 
-    Person::displayInfo();
-
-    std::cout << "ID: "   << ID   << std::endl
+    std::cout << "Name: " << name << std::endl
+              << "Age: "  << age  << std::endl
+              << "ID: "   << ID   << std::endl
               << "GPA: "  << GPA  << std::endl;
 
 }
