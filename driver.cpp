@@ -3,16 +3,21 @@
 
 #include "Person.h"
 #include "Student.h"
+#include "Worker.h"
+#include "Parent.h"
 using namespace std;
 
 //Prototypes
 void displayWrapper(Person &p);
 
 int main(int argc, char **argv) {
-    Person x;
-    Student y("Blade", 23, 1234, 3.9);
+
+    Worker  x;
+    Parent  y("Jackie", 50, true, 20);
+    Student z("Blade", 23, 1234, 3.9);
 
     displayWrapper(x);
+    displayWrapper(y);
     displayWrapper(y);
 
     return EXIT_SUCCESS;
