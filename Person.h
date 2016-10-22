@@ -17,6 +17,6 @@ class Person {
         int          getAge()               { return age; }
         void         setAge(int a)          { age = a; }
 
-        virtual void displayInfo() = 0;
+        virtual std::string getType() = 0;
 };
 #endif

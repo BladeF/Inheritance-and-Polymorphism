@@ -14,12 +14,12 @@ class Parent : public Person {
         Parent(bool m, int nk);
         Parent(std::string n, int a, bool m, int nk);
 
-        bool getMarried()       { return married; }
-        void setMarried(bool m) { married = m; }
-        int  getNumKids()       { return numKids; }
-        void setNumKids(int nk) { numKids = nk; }
+        bool    getMarried()          { return married; }
+        void    setMarried(bool m)    { married = m; }
+        int     getNumKids()          { return numKids; }
+        void    setNumKids(int nk)    { numKids = nk; }
 
-        void displayInfo();
+        virtual std::string getType() { return "Parent"; }
 
 };
 

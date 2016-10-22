@@ -13,12 +13,12 @@ class Worker : public Person {
         Worker(std::string c, double w);
         Worker(std::string n, int a, std::string c, double w);
 
-        std::string getCompany()              { return company; }
-        void        setCompany(std::string c) { company = c; }
-        double      getWage()                 { return wage; }
-        void        setWage(double w)         { wage = w; }
+        std::string          getCompany()              { return company; }
+        void                 setCompany(std::string c) { company = c; }
+        double               getWage()                 { return wage; }
+        void                 setWage(double w)         { wage = w; }
 
-        void        displayInfo();
+        virtual std::string getType()                  { return "Worker"; }
 
 };
 #endif

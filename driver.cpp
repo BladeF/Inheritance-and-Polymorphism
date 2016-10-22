@@ -12,23 +12,26 @@ void displayWrapper(Person *p);
 
 int main(int argc, char **argv) {
 
-    Person *x = new Worker;
-    Person *y = new Parent("Jackie", 50, true, 20);
-    Person *z = new Student("Blade", 23, 1234, 3.9);
+    Person *family[3] =
+        {
+            new Worker("Aaron", 47, "Toledo Fire and Rescue", 60.75),
+            new Parent("Jackie", 50, true, 20),
+            new Student("Blade", 23, 1234, 3.9)
+        };
 
-    displayWrapper(x);
-    displayWrapper(y);
-    displayWrapper(y);
-
-    delete x, y, z;
+    for(int i = 0; i < 3; i++) {
+        displayWrapper(family[i]);
+        delete family[i];
+    }
 
     return EXIT_SUCCESS;
 }
 
 void displayWrapper(Person *p) {
 
-    cout << "Displaying information:\n\n";
-    p->displayInfo();
+    cout << "Displaying information:\n";
+    cout << "\tName: " << p->getName() << endl;
+    cout << "\tType: " << p->getType() << endl;
     cout << endl << endl;
 
     return;
