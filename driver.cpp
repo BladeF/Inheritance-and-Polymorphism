@@ -20,6 +20,8 @@ int main(int argc, char **argv) {
     displayWrapper(y);
     displayWrapper(y);
 
+    delete x, y, z;
+
     return EXIT_SUCCESS;
 }
 
