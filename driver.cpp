@@ -8,13 +8,13 @@
 using namespace std;
 
 //Prototypes
-void displayWrapper(Person &p);
+void displayWrapper(Person *p);
 
 int main(int argc, char **argv) {
 
-    Worker  x;
-    Parent  y("Jackie", 50, true, 20);
-    Student z("Blade", 23, 1234, 3.9);
+    Person *x = new Worker;
+    Person *y = new Parent("Jackie", 50, true, 20);
+    Person *z = new Student("Blade", 23, 1234, 3.9);
 
     displayWrapper(x);
     displayWrapper(y);
@@ -23,10 +23,10 @@ int main(int argc, char **argv) {
     return EXIT_SUCCESS;
 }
 
-void displayWrapper(Person &p) {
+void displayWrapper(Person *p) {
 
     cout << "Displaying information:\n\n";
-    p.displayInfo();
+    p->displayInfo();
     cout << endl << endl;
 
     return;
