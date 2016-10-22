@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Worker.h"
 
 Worker::Worker() : Person() {
