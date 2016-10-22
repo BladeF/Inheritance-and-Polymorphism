@@ -21,3 +21,4 @@ class Worker : public Person {
         void        displayInfo();
 
 };
+#endif
